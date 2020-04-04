@@ -1,0 +1,30 @@
+﻿
+@model WebAppNo1.ViewModels.IndividalViewModel
+@{
+    ViewData["Title"] = "index";
+}
+
+<h1>index</h1>
+@foreach(var individal in Model.Individals)
+{
+    <div>
+        <h2>
+            @individal.name
+        </h2>
+        <h3>
+            @individal.sex
+        </h3>
+        <h4>
+            @individal.age
+        </h4>
+    </div>
+}
+@foreach (var conption in Model.Conptions)
+{
+    <div>
+        <h2>
+            @conption.address
+        </h2>
+    </div>
+}
+
