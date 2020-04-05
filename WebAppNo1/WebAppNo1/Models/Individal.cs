@@ -7,8 +7,10 @@ namespace WebAppNo1.Models
 {
     public class Individal
     {
+        public int id { get; set; }
         public string age { get; set; }
         public string sex { get; set; }
         public string name { get; set; }
+        public string province { get; set; }
     }
 }

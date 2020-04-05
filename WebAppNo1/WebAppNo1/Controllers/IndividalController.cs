@@ -13,12 +13,6 @@ namespace WebAppNo1.Controllers
     {
         private IIndividalRepories _iIndividalRepories;
         private IConptionRepories _iConptionRepories;
-        /*public IndividalController(IIndividalRepories iIndividalRepories)
-        {
-            _iIndividalRepories = iIndividalRepories;
-        }
-*/
-
         public IndividalController(IIndividalRepories iIndividalRepories, IConptionRepories iConptionRepories)
         {
             _iIndividalRepories = iIndividalRepories;
@@ -26,6 +20,7 @@ namespace WebAppNo1.Controllers
         }
         public IActionResult index()
         {
+            
             var vm = new IndividalViewModel() {
                 Individals = _iIndividalRepories.getAllIndividal().ToList(),
                 Conptions = _iConptionRepories.getAllAddress().ToList()

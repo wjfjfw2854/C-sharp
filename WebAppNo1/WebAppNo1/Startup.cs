@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebAppNo1.Controllers;
 using WebAppNo1.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebAppNo1
 {
@@ -25,9 +26,14 @@ namespace WebAppNo1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AppDbContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+                );
             services.AddControllersWithViews();
-            services.AddTransient<IIndividalRepories,IndividalMocksRepories>();
-            services.AddTransient<IConptionRepories, IConptionMockRepories>();
+            /*services.AddTransient<IIndividalRepories,IndividalMocksRepories>();*/
+            services.AddTransient<IIndividalRepories,IndividalRepository>();
+            /*services.AddTransient<IConptionRepories, IConptionMockRepories>();*/
+            services.AddTransient<IConptionRepories, ConptionReposity>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

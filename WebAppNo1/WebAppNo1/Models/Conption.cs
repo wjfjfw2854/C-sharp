@@ -7,6 +7,9 @@ namespace WebAppNo1.Models
 {
     public class Conption
     {
+        public int id { get; set; }
         public string address { get; set; }
+        public string direct { get; set; }
+        public string primilry { get; set; }
     }
 }

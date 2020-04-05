@@ -28,9 +28,11 @@ namespace WebAppNo1.Models
                 for (int i = 0; i < 5; i++)
                 {
                     var individal = new Individal();
-                    individal.age = "20" + i;
+                    individal.id = i;
+                    individal.age = "2" + i;
                     individal.sex = i / 2 == 0 ? "female" : "male";
-                    individal.name = "邬一鸣nail_" + i;
+                    individal.name = "小一泽wait_" + i;
+                    individal.province = "黄寄_of_冥王系_" + i;
                     list.Add(individal);
                 }
                 _list = list;

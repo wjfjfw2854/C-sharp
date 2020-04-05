@@ -22,7 +22,9 @@ namespace WebAppNo1.Models
                 for(var i = 0;i < 6;i++)
                 {
                     Conption conption = new Conption();
-                    conption.address = "吴中路800弄30号40" + i;
+                    conption.address = "烈中路800弄30号40" + i;
+                    conption.direct = "杨城太守" + i;
+                    conption.primilry = "4" + i + "部门";
                     list.Add(conption);
                 }
                 _list = list;
