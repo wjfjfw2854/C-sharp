@@ -5,6 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200405042912_initialM.cs" />
+    <Compile Remove="Migrations\20200405042912_initialM.Designer.cs" />
+    <Compile Remove="Migrations\20200406015448_add_isForien_hasMacle.cs" />
+    <Compile Remove="Migrations\20200406015448_add_isForien_hasMacle.Designer.cs" />
+    <Compile Remove="Migrations\20200406021321_config_isforien_hasmacle.cs" />
+    <Compile Remove="Migrations\20200406021321_config_isforien_hasmacle.Designer.cs" />
+    <Compile Remove="Migrations\20200406021725_config_macle_forein.cs" />
+    <Compile Remove="Migrations\20200406021725_config_macle_forein.Designer.cs" />
+    <Compile Remove="Migrations\20200406022604_string_bool.cs" />
+    <Compile Remove="Migrations\20200406022604_string_bool.Designer.cs" />
+    <Compile Remove="Migrations\20200406022908_bool_str.cs" />
+    <Compile Remove="Migrations\20200406022908_bool_str.Designer.cs" />
+    <Compile Remove="Migrations\20200406024259_mig.cs" />
+    <Compile Remove="Migrations\20200406024259_mig.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
       <PrivateAssets>all</PrivateAssets>

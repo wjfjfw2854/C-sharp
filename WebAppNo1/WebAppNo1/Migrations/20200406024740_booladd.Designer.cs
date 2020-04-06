@@ -9,8 +9,8 @@ using WebAppNo1.Models;
 namespace WebAppNo1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200405042912_initialM")]
-    partial class initialM
+    [Migration("20200406024740_booladd")]
+    partial class booladd
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,6 +33,9 @@ namespace WebAppNo1.Migrations
                     b.Property<string>("direct")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("forien")
+                        .HasColumnType("bit");
+
                     b.Property<string>("primilry")
                         .HasColumnType("nvarchar(max)");
 
@@ -50,6 +53,9 @@ namespace WebAppNo1.Migrations
 
                     b.Property<string>("age")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("macle")
+                        .HasColumnType("bit");
 
                     b.Property<string>("name")
                         .HasColumnType("nvarchar(max)");

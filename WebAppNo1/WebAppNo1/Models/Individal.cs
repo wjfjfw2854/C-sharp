@@ -12,5 +12,6 @@ namespace WebAppNo1.Models
         public string sex { get; set; }
         public string name { get; set; }
         public string province { get; set; }
+        public bool macle { get; set; }
     }
 }

@@ -23,20 +23,43 @@
             @individal.age
         </h4>
         <h5>@individal.province</h5>
+    @if (individal.macle)
+    {
+        <h6>
+            肌肉男出没，'危险'
+        </h6>
+    }
+    else { 
+        <h6>
+            正常人，安全
+        </h6>
+    }
 </div>
 }
 @foreach (var conption in Model.Conptions)
 {
 <div>
-        <h2 class="h21">
-            @conption.address
-        </h2>
-        <h3>
-            @conption.direct
-        </h3>
-        <h4>
-            @conption.primilry
-        </h4>
+    <h2 class="h21">
+        @conption.address
+    </h2>
+    <h3>
+        @conption.direct
+    </h3>
+    <h4>
+        @conption.primilry
+    </h4>
+    @if (conption.forien)
+    {
+        <h6>
+            合资公司
+        </h6>
+    }
+    else
+    {
+        <h6>
+            私人企业
+        </h6>
+    }
 </div>
 }
 

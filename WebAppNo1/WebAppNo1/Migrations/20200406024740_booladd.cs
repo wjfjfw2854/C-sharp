@@ -2,7 +2,7 @@
 
 namespace WebAppNo1.Migrations
 {
-    public partial class initialM : Migration
+    public partial class booladd : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,8 @@ namespace WebAppNo1.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     address = table.Column<string>(nullable: true),
                     direct = table.Column<string>(nullable: true),
-                    primilry = table.Column<string>(nullable: true)
+                    primilry = table.Column<string>(nullable: true),
+                    forien = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -30,7 +31,8 @@ namespace WebAppNo1.Migrations
                     age = table.Column<string>(nullable: true),
                     sex = table.Column<string>(nullable: true),
                     name = table.Column<string>(nullable: true),
-                    province = table.Column<string>(nullable: true)
+                    province = table.Column<string>(nullable: true),
+                    macle = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {

@@ -31,6 +31,9 @@ namespace WebAppNo1.Migrations
                     b.Property<string>("direct")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("forien")
+                        .HasColumnType("bit");
+
                     b.Property<string>("primilry")
                         .HasColumnType("nvarchar(max)");
 
@@ -48,6 +51,9 @@ namespace WebAppNo1.Migrations
 
                     b.Property<string>("age")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("macle")
+                        .HasColumnType("bit");
 
                     b.Property<string>("name")
                         .HasColumnType("nvarchar(max)");

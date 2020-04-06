@@ -11,5 +11,6 @@ namespace WebAppNo1.Models
         public string address { get; set; }
         public string direct { get; set; }
         public string primilry { get; set; }
+        public bool forien { get; set; }
     }
 }
