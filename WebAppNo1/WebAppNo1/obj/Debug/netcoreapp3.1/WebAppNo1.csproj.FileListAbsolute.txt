@@ -1,6 +1,7 @@
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\bin\Debug\netcoreapp3.1\appsettings.json
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\bin\Debug\netcoreapp3.1\appsettings1.json
+E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\bin\Debug\netcoreapp3.1\libman.json
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\bin\Debug\netcoreapp3.1\WebAppNo1.exe
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\bin\Debug\netcoreapp3.1\WebAppNo1.deps.json
@@ -138,4 +139,3 @@ E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\obj\Debug\netcoreapp3.1\WebA
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\obj\Debug\netcoreapp3.1\WebAppNo1.csproj.CopyComplete
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\obj\Debug\netcoreapp3.1\WebAppNo1.dll
 E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\obj\Debug\netcoreapp3.1\WebAppNo1.pdb
-E:\workspace_wjf\miniservice_C#\WebAppNo1\WebAppNo1\obj\Debug\netcoreapp3.1\WebAppNo1.csprojAssemblyReference.cache
