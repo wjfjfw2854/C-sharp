@@ -12,6 +12,7 @@ using WebAppNo1.Controllers;
 using WebAppNo1.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 
 namespace WebAppNo1
 {
@@ -53,7 +54,7 @@ namespace WebAppNo1
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseAuthentication();//用户认证
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
