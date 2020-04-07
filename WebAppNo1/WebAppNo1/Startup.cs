@@ -37,6 +37,7 @@ namespace WebAppNo1
             services.AddTransient<IIndividalRepories,IndividalRepository>();
             /*services.AddTransient<IConptionRepories, IConptionMockRepories>();*/
             services.AddTransient<IConptionRepories, ConptionReposity>();
+            services.AddTransient<Ihwelcome, HwelcomeRepories>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

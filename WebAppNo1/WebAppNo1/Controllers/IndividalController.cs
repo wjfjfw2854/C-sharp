@@ -13,10 +13,12 @@ namespace WebAppNo1.Controllers
     {
         private IIndividalRepories _iIndividalRepories;
         private IConptionRepories _iConptionRepories;
-        public IndividalController(IIndividalRepories iIndividalRepories, IConptionRepories iConptionRepories)
+        private Ihwelcome _iHwelcome;
+        public IndividalController(IIndividalRepories iIndividalRepories, IConptionRepories iConptionRepories,Ihwelcome ihwelcome)
         {
             _iIndividalRepories = iIndividalRepories;
             _iConptionRepories = iConptionRepories;
+            _iHwelcome = ihwelcome;
         }
         public IActionResult index()
         {
@@ -24,6 +26,14 @@ namespace WebAppNo1.Controllers
             var vm = new IndividalViewModel() {
                 Individals = _iIndividalRepories.getAllIndividal().ToList(),
                 Conptions = _iConptionRepories.getAllAddress().ToList()
+            };
+            return View(vm);
+        }
+
+        public IActionResult hwelcome()
+        {
+            var vm = new HwelcomeVm() {
+                welcomes = _iHwelcome.getHwelcomes().ToList()
             };
             return View(vm);
         }

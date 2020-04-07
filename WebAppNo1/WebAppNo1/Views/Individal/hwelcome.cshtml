@@ -1,0 +1,37 @@
+﻿@model WebAppNo1.ViewModels.HwelcomeVm;
+@{
+    ViewData["Title"] = "hwelcome";
+    var freshMan = "新人斯密达哦ooo~~~";
+    var BirdMan = "asp.Net老鸟哦,吊的不行啊！！！";
+}
+
+<h1>hwelcome</h1>
+<h2>欢迎进入asp.net Mvc entityFramework现在！by wjf！</h2>
+@foreach (var Welcome in Model.welcomes)
+{
+<ul>
+    <li>
+        @if (Welcome.isNew)
+        {
+            <a>@freshMan</a>
+        }
+        else
+        {
+            <a>@BirdMan</a>
+        }
+    </li>
+    <li>
+        <a>@Welcome.how</a>
+    </li>
+    <li>
+        <a>@Welcome.are</a>
+    </li>
+    <li>
+        <a>@Welcome.you</a>
+    </li>
+    <li>
+        <a>@Welcome.nice</a>
+    </li>
+</ul>
+}
+

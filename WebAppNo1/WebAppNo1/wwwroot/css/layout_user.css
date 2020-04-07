@@ -1,4 +1,8 @@
 ﻿.h3style{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
     color:blue;
-    background-color:darkgoldenrod;
+    background-color:crimson;
 }
