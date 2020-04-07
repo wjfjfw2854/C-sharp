@@ -8233,19 +8233,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\wujunfeng\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\workspace_wjf\\miniservice_C#\\WebAppNo1\\WebAppNo1\\WebAppNo1.csproj",
+      "projectUniqueName": "C:\\companyworks\\wrokspace\\C#\\C_sharp_git\\C-sharp\\WebAppNo1\\WebAppNo1\\WebAppNo1.csproj",
       "projectName": "WebAppNo1",
-      "projectPath": "E:\\workspace_wjf\\miniservice_C#\\WebAppNo1\\WebAppNo1\\WebAppNo1.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\workspace_wjf\\miniservice_C#\\WebAppNo1\\WebAppNo1\\obj\\",
+      "projectPath": "C:\\companyworks\\wrokspace\\C#\\C_sharp_git\\C-sharp\\WebAppNo1\\WebAppNo1\\WebAppNo1.csproj",
+      "packagesPath": "C:\\Users\\wujunfeng\\.nuget\\packages\\",
+      "outputPath": "C:\\companyworks\\wrokspace\\C#\\C_sharp_git\\C-sharp\\WebAppNo1\\WebAppNo1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wujunfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

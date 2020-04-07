@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using WebAppNo1.Controllers;
 using WebAppNo1.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebAppNo1
 {
@@ -26,6 +27,7 @@ namespace WebAppNo1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc(options => { options.EnableEndpointRouting = false; }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddDbContext<AppDbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
                 );
@@ -52,16 +54,21 @@ namespace WebAppNo1
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseRouting();
-
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Individal}/{action=index}/{id?}"
+                    );
+            });
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
+            /*app.UseRouting();*/
+            /*app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+            });*/
         }
     }
 }
